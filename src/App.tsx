@@ -4,13 +4,13 @@ import Preloader from './components/Preloader';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Benefits from './components/Benefits';
-import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import LeadCapture from './components/LeadCapture';
 import Footer from './components/Footer';
 import ServicesCTA from './components/ServicesCTA';
 import ServicesPage from './pages/ServicesPage';
+import Services from './components/Services';
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -41,7 +41,7 @@ export default function App() {
           <main>
             <Hero />
             <Benefits />
-            <Pricing />
+            <Services />
             <ServicesCTA />
             <Testimonials />
             <FAQ />
@@ -54,7 +54,7 @@ export default function App() {
         {/* Floating WhatsApp Button */}
         {!loading && (
           <a
-            href="https://wa.me/5521987968794?text=Oi!%20Tenho%20interesse%20em%20criar%20meu%20site%20profissional"
+            href="https://wa.me/5521987968794?text=Oi!%20Tenho%20interesse%20em%20um%20projeto%20digital%20com%20a%20HospedaShop"
             target="_blank"
             rel="noopener noreferrer"
             className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-2xl bg-emerald-500 hover:bg-emerald-400 flex items-center justify-center shadow-2xl shadow-emerald-500/40 hover:shadow-emerald-500/60 transition-all duration-300 hover:-translate-y-1 group animate-fade-in-delayed"

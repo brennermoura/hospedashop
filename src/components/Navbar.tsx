@@ -12,7 +12,7 @@ export default function Navbar() {
 
   const links = [
     { label: 'Benefícios', href: '#beneficios' },
-    { label: 'Planos', href: '#planos' },
+    { label: 'Serviços', href: '#servicos' },
     { label: 'Depoimentos', href: '#depoimentos' },
     { label: 'FAQ', href: '#faq' },
   ];
@@ -60,7 +60,7 @@ export default function Navbar() {
               href="#contato"
               className="btn-primary relative px-5 py-2.5 text-sm font-semibold rounded-xl text-white z-10"
             >
-              <span className="relative z-10">Fale com o especialista</span>
+              <span className="relative z-10">Fale com especialista</span>
             </a>
           </div>
 
@@ -89,11 +89,11 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#planos"
+              href="#contato"
               onClick={() => setMenuOpen(false)}
               className="btn-primary relative mt-2 text-center px-5 py-3 text-sm font-semibold rounded-xl text-white z-10"
             >
-              <span className="relative z-10">Começar Agora</span>
+              <span className="relative z-10">Falar no WhatsApp</span>
             </a>
           </div>
         </div>

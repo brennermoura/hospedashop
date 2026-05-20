@@ -4,27 +4,27 @@ import ScrollReveal from './ScrollReveal';
 const faqs = [
   {
     question: 'Quanto tempo leva para meu site ficar pronto?',
-    answer: 'Após a confirmação do pagamento e envio das informações necessárias, seu site fica pronto em até 10 dias úteis. Para projetos mais complexos, o prazo pode ser ajustado conforme a necessidade.',
+    answer: 'Sites institucionais costumam ficar prontos em até 10 dias úteis após o envio das informações. Lojas virtuais, sistemas e apps híbridos têm prazo definido por escopo, porque dependem de funcionalidades, integrações e volume de conteúdo.',
   },
   {
-    question: 'O que está incluso no plano?',
-    answer: 'Todos os planos incluem: criação do site profissional, hospedagem em nuvem com SSL, e-mail corporativo, suporte técnico e atualizações mensais. O número de e-mails e atualizações varia conforme o plano escolhido. O domínio é registrado à parte (cerca de R$40/ano).',
+    question: 'O que está incluso no site de R$49,90/mês?',
+    answer: 'O plano de site inclui desenvolvimento do site profissional, hospedagem na nuvem, site protegido, e-mail corporativo, suporte técnico e atualizações mensais. O domínio é contratado à parte, mas fazemos a orientação e a configuração.',
   },
   {
     question: 'Preciso comprar o domínio separado?',
     answer: 'Sim, o domínio (ex: www.suaempresa.com.br) deve ser adquirido separadamente. Podemos orientar sobre onde e como comprar, além de fazer toda a configuração para você sem custo adicional.',
   },
   {
-    question: 'Posso atualizar o site depois?',
-    answer: 'Sim! Todos os planos incluem atualizações mensais. Se você precisar de alterações fora do ciclo mensal, temos opções de suporte adicional disponíveis nos planos Profissional e Empresarial.',
+    question: 'Vocês também criam lojas virtuais, sistemas e apps?',
+    answer: 'Sim. Além de sites, criamos lojas virtuais, sistemas web e apps híbridos que podem funcionar no navegador e no celular. Esses projetos são orçados conforme o escopo, porque cada operação precisa de fluxos, telas e integrações diferentes.',
   },
   {
     question: 'Como funciona o e-mail profissional?',
-    answer: 'Criamos e-mails personalizados com o domínio da sua empresa (ex: contato@suaempresa.com.br). Você recebe e envia e-mails com a identidade da sua marca, transmitindo muito mais credibilidade e profissionalismo.',
+    answer: 'Configuramos e-mails personalizados com o domínio da sua empresa, como contato@suaempresa.com.br. Isso ajuda a transmitir mais credibilidade e mantém a comunicação alinhada com a marca.',
   },
   {
-    question: 'E se eu quiser cancelar?',
-    answer: 'Sem letras miúdas. Você pode cancelar a qualquer momento, após 6 meses, sem multas ou burocracia. Basta nos avisar e encerramos o serviço no final do período vigente.',
+    question: 'Onde os projetos ficam hospedados?',
+    answer: 'Os projetos são publicados em hospedagem na nuvem, em um ambiente seguro e preparado para manter seu site, loja, sistema ou app sempre disponível para os clientes.',
   },
   {
     question: 'O site vai aparecer no Google?',
@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: 'O site funciona em celular e tablet?',
-    answer: 'Pode apostar que sim. O site funciona 100% em qualquer dispositivo. Ele se adapta de forma inteligente ao tamanho da tela para garantir que sua empresa passe uma imagem profissional em qualquer lugar.',
+    answer: 'Sim. Os projetos são pensados para funcionar bem em celular, tablet e desktop. No caso de apps híbridos, a proposta é entregar uma experiência que possa ser usada como app e também como sistema web.',
   },
 ];
 

@@ -3,32 +3,36 @@ import ScrollReveal from './ScrollReveal';
 const benefits = [
   {
     icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-blue-400">
-        <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" fillOpacity="0.15" />
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-400">
+        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 14.7255 3.09032 17.1962 4.85857 19C5.03442 19.1785 5.12741 19.4243 5.10657 19.6732L4.92308 21.875C4.8936 22.2287 5.21556 22.5135 5.55393 22.3996L7.90696 21.6074C8.13601 21.5303 8.38676 21.5647 8.58913 21.7011C9.62479 21.897 10.7992 22 12 22Z" fill="currentColor" fillOpacity="0.15" />
+        <circle cx="7.5" cy="10.5" r="1.5" fill="currentColor" />
+        <circle cx="11.5" cy="7.5" r="1.5" fill="currentColor" />
+        <circle cx="16.5" cy="9.5" r="1.5" fill="currentColor" />
+        <circle cx="15.5" cy="14.5" r="1.5" fill="currentColor" />
       </svg>
     ),
     color: 'from-blue-500 to-blue-600',
     glow: 'shadow-blue-500/20',
     border: 'border-blue-500/20',
     iconBg: 'bg-blue-500/10',
-    title: 'Alta Performance',
+    title: 'Design que Transmite Confiança',
     description:
-      'Passe confiança com um site que carrega rápido de verdade. Desenvolvemos projetos totalmente otimizados para rodar bem no celular, tablet e desktop, entregando a fluidez e o profissionalismo que o seu cliente espera.',
+      'Criamos uma primeira impressão impecável. Seu site ganha um visual moderno, elegante e estratégico, transmitindo a autoridade que sua empresa merece desde o primeiro clique.',
   },
   {
     icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-cyan-400">
-        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" fillOpacity="0.15" />
-        <polyline points="9,22 9,12 15,12 15,22" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-cyan-400">
+        <path d="M12 20h9" />
+        <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" fill="currentColor" fillOpacity="0.15" />
       </svg>
     ),
     color: 'from-cyan-500 to-cyan-600',
     glow: 'shadow-cyan-500/20',
     border: 'border-cyan-500/20',
     iconBg: 'bg-cyan-500/10',
-    title: 'Hospedagem Cloud',
+    title: 'Copywriting Estratégico',
     description:
-      'Trabalhamos com uma infraestrutura segura e de alta performance para o seu site carregar rápido e ter estabilidade total. É uma plataforma que cresce junto com o seu negócio, mantendo tudo protegido e sempre online para atender seu público.',
+      'Textos e chamadas criados sob medida para o seu público. Comunicamos o value do seu serviço de forma simples, direta e altamente persuasiva para facilitar a decisão de compra.',
   },
   {
     icon: (
@@ -41,59 +45,55 @@ const benefits = [
     glow: 'shadow-emerald-500/20',
     border: 'border-emerald-500/20',
     iconBg: 'bg-emerald-500/10',
-    title: 'Segurança SSL Inclusa',
+    title: 'Foco Total em Conversão',
     description:
-      'Construa uma presença digital segura logo no início. Seus visitantes navegam em um ambiente com criptografia total, protegendo as informações e garantindo que o seu site seja visto como profissional e confiável pelo público.',
+      'Estrutura planejada para transformar visitantes em oportunidades reais. Levamos o cliente direto para o seu WhatsApp, formulário ou carrinho de forma natural e sem fricção.',
   },
   {
     icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-violet-400">
-        <polyline points="16,18 22,12 16,6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        <polyline points="8,6 2,12 8,18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        <line x1="19" y1="12" x2="5" y2="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-violet-400">
+        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+        <polyline points="16 7 22 7 22 13" fill="currentColor" fillOpacity="0.15" />
       </svg>
     ),
     color: 'from-violet-500 to-violet-600',
     glow: 'shadow-violet-500/20',
     border: 'border-violet-500/20',
     iconBg: 'bg-violet-500/10',
-    title: 'Tecnologia Moderna',
+    title: 'Estrutura Escalável',
     description:
-      'Use a tecnologia a favor do seu crescimento. Entregamos sites modernos e seguros, desenvolvidos com as ferramentas que os grandes players utilizam. Assim, sua empresa tem uma presença digital sólida, profissional e sempre pronta para evoluir.',
+      'Seu projeto nasce pronto para o futuro. O ecossistema é modular, permitindo expandir seu site para uma loja virtual, área de membros ou sistema interno conforme seu negócio cresce.',
   },
   {
     icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-orange-400">
-        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" fillOpacity="0.1" />
-        <polyline points="22,6 12,13 2,6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-orange-400">
+        <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7z" fill="currentColor" fillOpacity="0.15" />
+        <path d="M5 20h14a2 2 0 0 0 2-2V16H3v2a2 2 0 0 0 2 2z" />
       </svg>
     ),
     color: 'from-orange-500 to-orange-600',
     glow: 'shadow-orange-500/20',
     border: 'border-orange-500/20',
     iconBg: 'bg-orange-500/10',
-    title: 'E-mail Corporativo Confiável',
+    title: 'Posicionamento Premium',
     description:
-      'Passe muito mais confiança com um e-mail personalizado. Esqueça o @gmail ou @outlook e use o nome da sua empresa, tipo contato@suaempresa. É o detalhe que faz toda a diferença para mostrar que o seu negócio é sério e profissional.',
+      'Alinhamos sua identidade visual e comunicação para destacar sua marca da concorrência. Construímos uma presença digital séria e marcante que atrai os clientes certos.',
   },
   {
     icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-pink-400">
-        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        <circle cx="9" cy="7" r="4" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity="0.1" />
-        <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-pink-400">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" fill="currentColor" fillOpacity="0.15" />
       </svg>
     ),
     color: 'from-pink-500 to-pink-600',
     glow: 'shadow-pink-500/20',
     border: 'border-pink-500/20',
     iconBg: 'bg-pink-500/10',
-    title: 'Suporte Humano Dedicado',
+    title: 'Suporte e Evolução Contínua',
     description:
-      'Tenha um suporte que realmente resolve. Esqueça os robôs e as mensagens automáticas. Aqui você fala com gente de verdade, especialistas prontos para ouvir seu caso, entender o que você precisa e resolver tudo com atenção e agilidade.',
+      'Não te deixamos sozinho após o lançamento. Acompanhamos os primeiros passos do projeto, aplicando ajustes, melhorias e garantindo que sua plataforma rode 100% estabilizada.',
   },
 ];
-
 export default function Benefits() {
   return (
     <section
@@ -120,8 +120,8 @@ export default function Benefits() {
               </span>
             </h2>
             <p className="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-              Nossos planos garantem a qualidade e a segurança de ponta que sua
-              empresa precisa para uma presença digital profissional.
+              Mais do que publicar páginas, organizamos a forma como sua empresa se apresenta,
+              vende e evolui no digital.
             </p>
           </div>
         </ScrollReveal>
@@ -179,25 +179,24 @@ export default function Benefits() {
 
                 <div className="max-w-4xl mx-auto">
                   <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold leading-tight tracking-tight">
-                    Tudo isso já incluso em{" "}
+                    Um site profissional vai muito além de{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
-                      qualquer plano
+                      linhas de código
                     </span>
-                    , sem taxas extras ou pegadinhas.
+                    . Ele precisa ser fácil de entender, direto ao ponto e pronto para gerar contatos.
                   </h2>
 
                   <p className="mt-4 text-slate-400 text-sm sm:text-base max-w-xl mx-auto">
-                    Transparência total para você focar no que importa: o
-                    crescimento do seu negócio.
+                    Por isso entregamos o pacote completo: visual limpo, textos claros e uma estrutura que funciona sem complicação.
                   </p>
                 </div>
 
                 <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                   <a
-                    href="#planos"
+                    href="#servicos"
                     className="group relative inline-flex items-center gap-3 px-8 py-4 bg-blue-600 text-white font-bold rounded-2xl transition-all hover:bg-blue-500 hover:shadow-[0_0_30px_-5px_rgba(37,99,235,0.4)] active:scale-95"
                   >
-                    <span>Quero Meu Site Agora</span>
+                    <span>Ver Serviços</span>
                     <svg
                       className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
                       fill="none"
@@ -214,7 +213,7 @@ export default function Benefits() {
                   </a>
 
                   <span className="text-slate-500 text-xs font-medium uppercase tracking-widest">
-                    Sem letras miúdas
+                    Clareza antes de complexidade
                   </span>
                 </div>
 

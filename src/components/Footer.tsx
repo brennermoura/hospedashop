@@ -27,7 +27,7 @@ export default function Footer() {
                 </span>
               </div>
               <p className="text-slate-500 text-sm leading-relaxed max-w-sm mb-5">
-                A HospedaShop cria sites profissionais completos, com hospedagem em nuvem, e-mail personalizado e suporte dedicado. Sua presença online de alto nível começa aqui, com tudo que sua empresa precisa.
+                A HospedaShop cria sites, lojas virtuais, sistemas e apps híbridos para empresas que precisam se apresentar melhor, vender com mais clareza e organizar processos digitais.
               </p>
 
               {/* Contact info */}
@@ -60,7 +60,7 @@ export default function Footer() {
               <ul className="space-y-3">
                 {[
                   { label: 'Benefícios', href: '#beneficios' },
-                  { label: 'Planos', href: '#planos' },
+                  { label: 'Serviços', href: '#servicos' },
                   { label: 'Depoimentos', href: '#depoimentos' },
                   { label: 'FAQ', href: '#faq' },
                 ].map((link) => (
@@ -83,9 +83,9 @@ export default function Footer() {
               <ul className="space-y-3">
                 {[
                   { label: 'Criação de Sites', href: '#faq' },
-                  { label: 'Hospedagem em Nuvem', href: '#planos' },
-                  { label: 'Email Corporativo', href: '#beneficios' },
-                  { label: 'Suporte Técnico Humano', href: '#contato' },
+                  { label: 'Lojas Virtuais', href: '#servicos' },
+                  { label: 'Sistemas e Apps Híbridos', href: '#servicos' },
+                  { label: 'E-mail Corporativo', href: '#beneficios' },
                 ].map((link) => (
                   <li key={link.label}>
                     <a

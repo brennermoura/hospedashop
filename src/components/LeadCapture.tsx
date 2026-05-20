@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ScrollReveal from './ScrollReveal';
+import { LayoutDashboard, MessageSquare, ShieldCheck, ShoppingBag, Sparkles } from 'lucide-react';
 
 export default function LeadCapture() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', plan: '' });
@@ -15,12 +16,12 @@ const handleSubmit = (e: React.FormEvent) => {
   setLoading(true);
 
   // 1. Formata a mensagem que vai chegar para você
-  const message = `*Novo Lead - Site Profissional*
+  const message = `*Novo Lead - HospedaShop*
   
 *Nome:* ${form.name}
 *E-mail:* ${form.email}
 *WhatsApp:* ${form.phone}
-*Plano:* ${form.plan.toUpperCase()}
+*Interesse:* ${form.plan.toUpperCase()}
 
 --- 
 Mensagem enviada pelo formulário do site.`;
@@ -60,27 +61,28 @@ Mensagem enviada pelo formulário do site.`;
               </div>
 
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-6 tracking-tight leading-tight">
-                Pronto para ter seu{' '}
+                Pronto para estruturar seu{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-                  site profissional?
+                  projeto digital?
                 </span>
               </h2>
 
               <p className="text-slate-400 text-base sm:text-lg leading-relaxed mb-8">
-                Junte-se a outras empresas que já transformaram sua presença online conosco. Comece hoje mesmo e veja a diferença!
+                Conte o que sua empresa precisa agora: site, loja virtual, e-mail corporativo, sistema ou app híbrido.
+                A gente organiza o escopo e indica o melhor caminho.
               </p>
 
               {/* Benefits list */}
               <div className="space-y-4">
                 {[
-                  { icon: '🚀', text: 'Site pronto em até 10 dias úteis' },
-                  { icon: '🔒', text: 'SSL e hospedagem inclusos em todos os planos' },
-                  { icon: '📧', text: 'E-mail corporativo para transmitir credibilidade' },
-                  { icon: '🛡️', text: 'Suporte humano e dedicado sempre que precisar' },
+                  { icon: MessageSquare, text: 'Entendimento do momento atual da empresa' },
+                  { icon: LayoutDashboard, text: 'Indicação do melhor formato para começar' },
+                  { icon: ShoppingBag, text: 'Escopo claro para site, loja, sistema ou app' },
+                  { icon: ShieldCheck, text: 'Proposta organizada antes de desenvolver' },
                 ].map((item) => (
                   <div key={item.text} className="flex items-center gap-3">
                     <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-base flex-shrink-0">
-                      {item.icon}
+                      <item.icon className="w-4 h-4 text-slate-100" strokeWidth={2} />
                     </div>
                     <span className="text-slate-300 text-sm sm:text-base">{item.text}</span>
                   </div>
@@ -89,7 +91,7 @@ Mensagem enviada pelo formulário do site.`;
 
               {/* WhatsApp CTA */}
               <a
-                href="https://wa.me/5521987968794?text=Oi!%20Tenho%20interesse%20em%20criar%20meu%20site%20profissional"
+                href="https://wa.me/5521987968794?text=Oi!%20Tenho%20interesse%20em%20um%20projeto%20digital%20da%20HospedaShop"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 inline-flex items-center gap-3 px-6 py-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-semibold text-sm hover:bg-emerald-500/20 hover:border-emerald-500/50 transition-all duration-300 group"
@@ -113,7 +115,7 @@ Mensagem enviada pelo formulário do site.`;
                 {!submitted ? (
                   <>
                     <div className="mb-7">
-                      <h3 className="text-white font-bold text-xl sm:text-2xl mb-1">Solicite seu site agora</h3>
+                      <h3 className="text-white font-bold text-xl sm:text-2xl mb-1">Solicite uma conversa</h3>
                       <p className="text-slate-400 text-sm">Preencha os dados e entraremos em contato.</p>
                     </div>
 
@@ -165,7 +167,7 @@ Mensagem enviada pelo formulário do site.`;
 
                       <div>
                         <label className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
-                          Plano de interesse
+                          Serviço de interesse
                         </label>
                         <select
                           name="plan"
@@ -174,10 +176,11 @@ Mensagem enviada pelo formulário do site.`;
                           required
                           className="w-full px-4 py-3.5 rounded-xl bg-[#0a1628] border border-white/10 text-slate-300 text-sm focus:outline-none focus:border-blue-500/50 transition-all duration-200 appearance-none cursor-pointer"
                         >
-                          <option value="" disabled>Selecione um plano</option>
-                          <option value="basico">Básico — R$19,90/mês</option>
-                          <option value="profissional">Profissional — R$29,90/mês</option>
-                          <option value="empresarial">Empresarial — R$59,90/mês</option>
+                          <option value="" disabled>Selecione um serviço</option>
+                          <option value="site">Site profissional — R$49,90/mês</option>
+                          <option value="loja virtual">Loja virtual</option>
+                          <option value="sistema ou app hibrido">Sistema ou app híbrido</option>
+                          <option value="email e infraestrutura">E-mail corporativo e infraestrutura</option>
                         </select>
                       </div>
 
@@ -196,7 +199,7 @@ Mensagem enviada pelo formulário do site.`;
                           </>
                         ) : (
                           <>
-                            <span className="relative z-10">Quero Meu Site Agora</span>
+                            <span className="relative z-10">Quero conversar</span>
                             <svg className="relative z-10 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                               <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                             </svg>
@@ -204,8 +207,9 @@ Mensagem enviada pelo formulário do site.`;
                         )}
                       </button>
 
-                      <p className="text-center text-slate-600 text-xs">
-                        🔒 Seus dados estão seguros. Não enviamos spam.
+                      <p className="text-center text-slate-600 text-xs flex items-center justify-center gap-1.5">
+                        <ShieldCheck className="w-3.5 h-3.5 text-slate-500" />
+                        Seus dados estão seguros. Não enviamos spam.
                       </p>
                     </form>
                   </>
@@ -223,7 +227,8 @@ Mensagem enviada pelo formulário do site.`;
                     </p>
                     <div className="mt-6 p-4 rounded-xl bg-blue-500/10 border border-blue-500/20">
                       <p className="text-blue-300 text-sm">
-                        💡 Enquanto isso, pode nos contatar diretamente pelo WhatsApp para um atendimento ainda mais rápido!
+                        <Sparkles className="inline-block w-4 h-4 mr-1.5 align-[-2px]" />
+                        Enquanto isso, pode nos contatar diretamente pelo WhatsApp para um atendimento ainda mais rápido.
                       </p>
                     </div>
                   </div>

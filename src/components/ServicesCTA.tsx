@@ -2,18 +2,16 @@ import ScrollReveal from './ScrollReveal';
 import {
   ArrowRight,
   BarChart3,
-  CalendarCheck,
-  Headphones,
-  ShoppingBag,
+  LayoutDashboard,
   Sparkles,
 } from 'lucide-react';
 
 const services = [
   {
-    title: 'Lojas virtuais',
+    title: 'Entendimento do negócio',
     description:
-      'Catálogo, carrinho, checkout, painel de gestão e uma experiência pronta para vender sem parecer loja feita no susto.',
-    icon: ShoppingBag,
+      'Antes de falar em tela, entendemos sua oferta, seus clientes, seus gargalos e o objetivo do projeto.',
+    icon: Sparkles,
     color: 'from-blue-500 to-cyan-500',
     border: 'border-blue-500/20',
     iconBg: 'bg-blue-500/10',
@@ -21,10 +19,10 @@ const services = [
     glow: 'shadow-blue-500/20',
   },
   {
-    title: 'Agendamentos',
+    title: 'Estrutura do projeto',
     description:
-      'Sistema para clientes marcarem horários, serviços, consultas ou atendimentos com muito mais organização.',
-    icon: CalendarCheck,
+      'Organizamos páginas, fluxos, chamadas, áreas internas e prioridades para o projeto sair com direção.',
+    icon: LayoutDashboard,
     color: 'from-cyan-500 to-emerald-500',
     border: 'border-cyan-500/20',
     iconBg: 'bg-cyan-500/10',
@@ -32,10 +30,10 @@ const services = [
     glow: 'shadow-cyan-500/20',
   },
   {
-    title: 'Helpdesk personalizado',
+    title: 'Entrega com evolução',
     description:
-      'Canal de atendimento com chamados, histórico, status, responsáveis e relatórios salvos para sua empresa.',
-    icon: Headphones,
+      'Depois da primeira versão, acompanhamos ajustes e próximos passos para o digital continuar útil.',
+    icon: BarChart3,
     color: 'from-violet-500 to-purple-600',
     border: 'border-violet-500/20',
     iconBg: 'bg-violet-500/10',
@@ -67,20 +65,20 @@ export default function ServicesCTA() {
               <Sparkles className="w-4 h-4 text-cyan-300" />
 
               <span className="text-blue-400 text-xs font-semibold tracking-widest uppercase">
-                Novas soluções digitais
+                Como trabalhamos
               </span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
-              Além de sites, criamos{' '}
+              Um projeto digital precisa de{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 animate-gradient text-glow">
-                sistemas para sua operação
+                direção, não só execução
               </span>
             </h2>
 
             <p className="text-slate-400 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed">
-              Plataformas para vender, agendar e atender melhor. Tudo seguindo o mesmo cuidado visual,
-              técnico e profissional que o seu site precisa ter.
+              A HospedaShop ajuda a transformar uma necessidade solta em uma solução clara:
+              com escopo, conteúdo, fluxo, visual e próximo passo bem definidos.
             </p>
           </div>
         </ScrollReveal>
@@ -101,17 +99,17 @@ export default function ServicesCTA() {
                       <div className="w-2 h-2 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 animate-pulse" />
 
                       <span className="text-xs font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-                        Soluções personalizadas
+                        Menos improviso
                       </span>
                     </div>
 
                     <h3 className="text-white text-2xl sm:text-3xl md:text-4xl font-black leading-tight tracking-tight mb-4">
-                      Transforme seu site em uma ferramenta real de venda, atendimento e gestão.
+                      A gente organiza o projeto para ele ter função real dentro da empresa.
                     </h3>
 
                     <p className="text-slate-400 text-sm sm:text-base leading-relaxed mb-7">
-                      Se sua empresa precisa parar de resolver tudo em planilha, WhatsApp perdido e anotação no caderno,
-                      criamos um sistema com cara profissional e fluxo pensado para o seu negócio.
+                      O objetivo não é só "ter um site". É criar uma presença que explica melhor,
+                      facilita o contato, ajuda a vender e pode evoluir para processos mais completos.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4">
@@ -124,7 +122,7 @@ export default function ServicesCTA() {
                       </a>
 
                       <a
-                        href="https://wa.me/5521987968794?text=Oi!%20Tenho%20interesse%20em%20um%20sistema%20personalizado%20para%20minha%20empresa"
+                        href="https://wa.me/5521987968794?text=Oi!%20Tenho%20interesse%20em%20organizar%20um%20projeto%20digital%20para%20minha%20empresa"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full sm:w-auto px-7 py-4 text-sm font-bold rounded-2xl border border-white/10 text-slate-300 hover:text-white hover:border-emerald-500/40 hover:bg-emerald-500/10 transition-all duration-300 flex items-center justify-center gap-2 group/btn"
@@ -176,19 +174,19 @@ export default function ServicesCTA() {
                 <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-white/10 pt-6">
                   {[
                     {
-                      icon: <BarChart3 className="w-5 h-5" />,
-                      label: 'Relatórios salvos',
-                      desc: 'Histórico e indicadores',
-                    },
-                    {
-                      icon: <Headphones className="w-5 h-5" />,
-                      label: 'Atendimento real',
-                      desc: 'Fluxos por cliente',
-                    },
-                    {
                       icon: <Sparkles className="w-5 h-5" />,
-                      label: 'Visual premium',
-                      desc: 'Mesmo padrão do site',
+                      label: 'Oferta clara',
+                      desc: 'Mensagem que orienta',
+                    },
+                    {
+                      icon: <LayoutDashboard className="w-5 h-5" />,
+                      label: 'Fluxo pensado',
+                      desc: 'Menos fricção',
+                    },
+                    {
+                      icon: <BarChart3 className="w-5 h-5" />,
+                      label: 'Evolução real',
+                      desc: 'Próximos passos',
                     },
                   ].map((item) => (
                     <div
