@@ -19,7 +19,7 @@ const services = [
   {
     name: 'Loja Virtual',
     description: 'Sua estrutura completa para vender na internet de forma organizada, profissional e sem intermediários.',
-    priceLabel: 'Sob medida',
+    priceLabel: 'A partir de R$928,90',
     featured: false,
     icon: ShoppingBag,
     color: 'from-blue-400 to-cyan-500',
@@ -49,7 +49,7 @@ const services = [
   {
     name: 'Desenvolvimento de Sites',
     description: 'Um site sob medida para fixar sua marca no mercado, passar seriedade e atrair novos contatos.',
-    priceLabel: 'R$49,90/mês',
+    priceLabel: 'A partir de R$449,90',
     featured: true,
     icon: LayoutTemplate,
     color: 'from-cyan-400 to-emerald-400',
@@ -78,8 +78,8 @@ const services = [
   },
   {
     name: 'Sistemas e Apps Híbridos',
-    description: 'Ferramentas exclusivas para automatizar as rotinas e resolver gargalos operacionais da sua empresa.',
-    priceLabel: 'Personalizado',
+    description: 'Plataformas personalizadas para tirar sua empresa do papel, integrar sua equipe e simplificar a gestão em um só lugar.',
+    priceLabel: 'A partir de R$1.487,90',
     featured: false,
     icon: LayoutDashboard,
     color: 'from-violet-500 to-purple-500',
@@ -111,21 +111,21 @@ const services = [
 const infrastructure = [
   {
     icon: Sparkles,
-    title: 'Clareza comercial',
+    title: 'Mensagem direta',
     description:
-      'Alinhamos o texto e a estrutura com o que o seu cliente realmente busca antes de começar o desenvolvimento.',
+      'Organizamos o conteúdo pensando exatamente no que o seu cliente busca. Sem enrolação ou textos difíceis, direto ao ponto para prender a atenção dele.',
   },
   {
     icon: LayoutDashboard,
-    title: 'Navegação direta',
+    title: 'Fácil de navegar',
     description:
-      'Eliminamos distrações. Cada seção serve para guiar o visitante até o botão de contato ou fechamento.',
+      'Eliminamos as distrações e a bagunça visual. A página inteira é desenhada para guiar o visitante de forma natural até o botão de contato no WhatsApp.',
   },
   {
     icon: ShieldCheck,
-    title: 'Flexibilidade real',
+    title: 'Pronto para crescer',
     description:
-      'Seu projeto pode começar como um site institucional simples e evoluir para uma loja ou sistema quando você precisar.',
+      'Seu projeto começa no tamanho certo para o seu momento atual. Você pode iniciar com um site simples hoje e expandir para uma loja ou sistema quando o negócio pedir.',
   },
 ];
 
@@ -308,11 +308,11 @@ export default function Services() {
                     </div>
 
                     <h3 className="text-white text-2xl sm:text-3xl md:text-4xl font-black leading-tight tracking-tight mb-4">
-                      Projetos objetivos, feitos para quem não quer perder tempo.
+                      Recursos inteligentes, para organizar e trazer resultados reais.
                     </h3>
 
                     <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-                      De nada adianta uma estrutura visual incrível se ela for confusa para o usuário. Organizamos cada elemento para que sua empresa se apresente bem, poupe esforços internos e feche negócios com muito mais facilidade.
+                      Desenvolvemos recursos que resolvem tarefas reais da sua rotina. Uma estrutura limpa e intuitiva para você e para seu cliente.
                     </p>
                   </div>
 
@@ -351,6 +351,7 @@ export default function Services() {
           </div>
         </ScrollReveal>
       </div>
+      
     </section>
   );
 }
